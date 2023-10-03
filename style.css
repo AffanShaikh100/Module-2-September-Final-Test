@@ -1,0 +1,524 @@
+/* GENERAL CSS OF BODY */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+   
+}
+.navdiv,.section1,.section2,.section3{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* CSS OF NAV */
+header{
+    position: sticky;
+    top: 0px;
+    background-color:white;
+   
+}
+.navdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+    padding: 25px;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+.nav1>img{
+    margin-right: 30px;
+}
+.nav2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    align-items: center;
+}
+.nav2>p>span{
+    margin-inline: 20px;
+}
+.nav2>img{
+    margin-inline :60px;
+}
+
+/* CSS OF COVER PHOTO */
+.section1{
+    width: 91vw;
+    margin-inline: auto;
+    border-radius: 30px;
+    height: 57vh;
+    background-image: url(./img\ assets/COVER.svg);
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.section1>div>h2{
+   padding-top: 80px;
+   padding-left: 80px;
+   color: #DC582A;
+   font-size: 24px;
+   font-weight: 500;
+   padding-bottom: 0px;
+}
+.section1>div>h1{
+    padding-top: 5px;
+    padding-left: 80px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+.section1>div>h3{
+    padding-top: 10px;
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* CSS OF SEARCH BAR */
+.section2{
+    width: 91vw;
+    margin-inline: auto;
+    margin-top: 30px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section2>div{
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    border-radius: 2px 0px 0px 2px;
+    margin-top: 15px;
+}
+.section2>div>h3{
+    color: #252525;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.searchicon{
+    margin-left: 20px;
+}
+.section2>div>input{
+    width: 82vw;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.searchicon2{
+    background: #509E2F;
+    padding: 9px 13px;
+    margin-left: 10px;
+}
+
+
+/* CSS OF SECTION 3 BUTTON STARTS */
+.section3{
+    width: 91vw;
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section3>div>button{
+    margin-right: 15px;
+    padding: 27px;
+    width: 16vw;
+    height:12vh;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+.allbutton{
+    
+    background: #EAAA00;
+}
+.vegbutton{
+    
+    background: #C4D600;
+}
+.nonvegbutton{
+    background: #DC582A;
+}
+
+
+
+/* Section 4 CSS OF DISPLAYING CArDS STARTS */
+
+.section4{
+    width: 91vw;
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+   
+}
+.dynamic1{
+    width: 19vw;
+}
+.dynamic1>h3{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #252525;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+.dynamic1>h4{
+    color: #252525;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.dynamic1>input{
+    margin-bottom: 30px;
+}
+.dynamic1>label{
+    margin-left: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* css of functionality section 4 starts here */
+.dynamic2{
+    width: 72vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cards{
+    width:21vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+    
+}
+.cards>img{
+    width: 100%;
+    height: 32vh;
+    background-size: contain;
+    border-radius: 16px;
+}
+.foodtype{
+    color: #A1A1A1;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.cardin-1{
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align:center;
+    margin-left: 5px;
+
+}
+.cardin-1>h3{
+    color: #252525;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cardin-1>p{
+    color: var(--Grey, #ADADAD);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.cardin-1>p>img{
+    margin-right: 5px;
+}
+
+.cardin-2{
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.cardin-2>h3{
+    color: #DC582A;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 8vw;
+}
+.cardin-2>button{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+  
+}
+.likebtn{
+    background-image: inherit;
+    background-size: contain;
+    
+}
+.cardin-2>img{
+    margin-right: 5px;
+}
+
+input[type=radio]{
+    accent-color: green;
+ }
+
+
+
+/* CSS OF FOOTER STARTS FROM BELOW */
+.footerdiv{
+    width: 91vw;
+    margin-inline: auto;
+    margin-top: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.foot1>img{
+    margin-bottom: 30px;
+}
+.foot1>p{
+    color: #253D4E;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.foot2,.foot3{
+    margin-top: 20px;
+}
+.foot2>h2,.foot3>h2{
+    margin-bottom: 30px;
+    color: #253D4E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.foot2>p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black-alpha-60, rgba(0, 0, 0, 0.60));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.foot3>h2{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    margin-top: 7px;
+}
+.foot3>p{
+    font-family: 'Archivo', sans-serif;
+    color: var(--black-alpha-60, rgba(0, 0, 0, 0.60));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.foot4>img{
+    margin-bottom: 30px;
+}
+.foot4>p{
+    color: var(--black-alpha-60, rgba(0, 0, 0, 0.60));
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.foot4>div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+}
+.foot4>div>div{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(42,51,66);
+    border-radius: 8px;
+}
+.foot4>div>div>input{
+    padding: 10px;
+    width: 17vw;
+    border: none;
+    margin-left: 6px;
+}
+.foot4>div>div>img{
+    margin-right: 10px ;
+}
+.foot4>div>div>input::placeholder{
+    color: #253D4E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.foot4>div>button{
+    padding: 12px;
+    border: none;
+    text-align: center;
+    background-color: rgb(80,158,47);
+    color: white;
+    margin-inline: 7px;
+    border-radius: 5px;
+}
+
+.socialbar{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.socialbar>img{
+    margin-inline: 20px;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgb(42,51,66)  ;
+}
+
+
+/* CSS OF HIDDEN TOGGLE NAVBAR */
+
+.navtoggle{
+    display: none;
+}
+.functionalnav{
+    display: block;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    left: -360px;
+    width: 300px;
+    height: 100vh;
+    padding: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.functionalnav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.functionalnav2>p{
+    color: var(--Black, #253D4E);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+#funcnav2{
+    color: #509E2F;
+}
+.navtoggle{
+    position: absolute;
+    top: 14px;
+    right: -80px;
+}
+.active{
+    left: 0px;
+}
+
+
+/* MEDIA QUERY STARTS TO MAKE MORE SITE RESPONSIVE TO EVERY DEVICE SIZE */
+
+@media screen and (min-width:400px) and (max-width:800px) {
+   .nav1>img{
+    margin-left: 50px;
+   }
+    .nav2{
+        display: none;
+    }
+    .navtoggle{
+        display:block;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    
+    .section3>div>button{
+        width: 27vw;
+        height: 14vh;
+        font-size: 15px;
+    }
+    .dynamic1{
+        display: none;
+    }
+    .dynamic2{
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-gap: 5px;
+
+    }
+    .cards{
+        width: 190px;
+    }
+    .cardin-1>p,.cardin-2>button,.cardin-2>img{
+        display: none;
+    }
+    .socialbar,.foot2,.foot3,.foot4{
+        display: none;
+    }
+    .foot1{
+        margin-inline: 60px;
+    }
+    .foot1>p>br{
+        display: none;
+    }
+    
+}
+
+@media screen  and (min-width:801px) and (max-width:1120px){
+    .dynamic1{
+       width: 10vw; 
+    }
+    .dynamic2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .cards{
+        width: 200px;
+    
+    }
+    .section3>div>button{
+        width: 200px;
+        height: 14vh;
+        font-size: 14px;
+    }
+}

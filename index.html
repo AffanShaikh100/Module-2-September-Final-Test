@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookpal</title>
+    <!-- LINKING THE CSS BELOW -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ADDING FONT FAMILY POPPINS 500 & 700-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- ADDING FONT FAMILY INTER 400,500,600 & 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ADDING FONT FAMILY ARCHIVO 500 & 600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body onload="loadrecipe(recipe)">
+    
+    <header>
+        <!-- THIS IS THE HTML OF ASIDE NAVBAR WHICH COMES IN MOBILE APPLICATION -->
+        <div id="toggleme" class="functionalnav">
+            <div class="functionalnav1">
+                <img src="./img assets/Cookpal 1.svg">
+                <img src="./img assets/Ellipse 2.svg">
+            </div>
+            <div class="navtoggle">
+                <img onclick="togglesidebar()" src="./img assets/menu.svg" alt="toggle loading">
+            </div>
+            <div class="functionalnav2">
+                <p id="funcnav2">Home</p>
+                <p>Explore</p>
+                <p>Help</p>
+            </div>
+        </div>
+       <!-- THE NORMAL NAV BAR STARTS FROM BELOW -->
+       <nav class="navdiv">
+           <div class="nav1">
+              <img  src="./img assets/Cookpal 1.svg" alt="logo loading">
+           </div>
+           <div class="nav2">
+              <p>
+                <span>Home</span>
+                <span>Explore</span>
+                <span>Help</span>
+              </p>
+              <img src="./img assets/Ellipse 2.svg" alt="userlogo loading">
+           </div>
+       </nav>       
+    </header>
+
+    <main>
+        <!-- COVER PHOTO OF SITE -->
+        <section class="section1">
+           <div>
+                <h2>Trending now</h2>
+                <h1>Mike’s famous salad
+                 <br>   with cheese</h1>
+                <h3>By John Mike</h3>
+           </div>
+        </section>
+        <!-- SEARCH BAR OF SITE -->
+        <section class="section2">
+             <h3>Search For Recipes</h3>
+             <div>
+                <img class="searchicon" src="./img assets/magnifying glass.svg">
+                <input onkeyup="searchfood()" id="searchrp" placeholder="Search for recipes...">
+                <img  class="searchicon2" src="./img assets/li_search.svg" alt="search icon loading">
+             </div>
+        </section >
+        <!-- BUTTONS TO INTERACT WITH SITE -->
+        <section class="section3">
+             <div>
+                <button onclick="getallrecepie()" class="allbutton">All Recipes <img src="./img assets/chevron.svg"></button>
+             </div>
+             <div>
+                <button onclick="getvegrecepie()" class="vegbutton">Veg Recipes only<img src="./img assets/chevron.svg"></button>
+            </div>
+            <div>
+                <button onclick="getnonvegrecepie()" class="nonvegbutton">Non Veg Recipes <img src="./img assets/chevron.svg"></button>
+             </div>
+        </section>
+        <!-- DISPLAY RECIPE DATA ON SITE -->
+        <section class="section4">
+              <div class="dynamic1">
+                  <h3>Filters</h3>
+                  <h4>Rating</h4>
+                  <input type="radio" id="highrating" name="recep" onclick="ratinghigh()">
+                  <label>4 and Above</label>
+                  <br>
+                  <input type="radio" id="averagerating" name="recep" onclick="ratingaverage()">
+                  <label>Below 4</label>
+              </div>
+
+              <!-- Functionality starts here -->
+              <div id="cardbody" class="dynamic2">
+                 
+                <!-- DYNAMICALLY ADDING CARDS IN THIS DIV -->
+              </div>
+        </section>
+    </main>
+
+    <!-- FOOTER OF PAGE STARTS FROM HERE -->
+
+    <footer class="footerdiv">
+        <div class="foot1">
+            <img src="./img assets/Cookpal 1.svg" alt="logo laoding"><br>
+            <p>Cookpal is a recipe website with a<br>
+                wide variety of delicious recipes, <br>
+                easy-to-use search function. Join<br>
+                 our community and let's cook <br>
+                 together!</p>
+        </div>
+        <div class="foot2">
+            <h2>Company</h2>
+            <p>Home</p>
+            <p>Explore</p>
+            <p>Team</p>
+            <p>About Us</p>
+            <p>Activity</p>
+        </div>
+        <div class="foot3">
+            <h2>Resources</h2>
+            <p>Blog</p>
+            <p>Use Cases</p>
+            <p>Testimonials</p>
+            <p>Insights</p>
+        </div>
+        <div class="foot4">
+            <img src="./img assets/Cookpal 1.svg" alt="logo laoding">
+            <br>
+            <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus 
+            <br>accumsan aliquam.</p>
+            <div>
+            <div><input type="email" placeholder="Your Email"><img src="./img assets/at.svg"></div>
+            <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SOCIAL MEDIA BAR -->
+    <div class="socialbar">
+        <img src="./img assets/instagram icon.svg" alt="Loading Plese wait"> 
+        <img src="./img assets/Twitter.svg" alt="Loading Plese wait">   
+        <img src="./img assets/linkedin icon.svg" alt="Loading Plese wait">
+        <img src="./img assets/facebook icon.svg" alt="Loading Plese wait">
+    </div>
+
+    <!-- LINKING JAVA SCRIPT FILE BELOW -->
+    <script src="./script.js"></script>
+</body>
+</html>
