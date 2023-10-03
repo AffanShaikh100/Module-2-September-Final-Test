@@ -55,7 +55,7 @@ header{
     margin-inline: auto;
     border-radius: 30px;
     height: 57vh;
-    background-image: url(./img\ assets/COVER.svg);
+    background-image: url(./newcover.png);
     background-repeat: no-repeat;
     color: white;
     margin-top: 40px;
@@ -97,7 +97,7 @@ header{
     background: #F3F3F3;
     display: flex;
     align-items: center;
-    border-radius: 2px 0px 0px 2px;
+    border-radius: 5px 0px 0px 5px;
     margin-top: 15px;
 }
 .section2>div>h3{
@@ -120,10 +120,17 @@ header{
     text-align: left;
 }
 
+.section2>div>input::placeholder{
+    color: var(--Grey, #ADADAD);
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .searchicon2{
     background: #509E2F;
     padding: 9px 13px;
     margin-left: 10px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 
